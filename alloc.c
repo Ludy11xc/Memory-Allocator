@@ -151,7 +151,8 @@ meta *first_fit(size_t s) {
     return p;
 }
 
-//Finds the best available free block
+//  Finds the best available free block
+/*  WROTE THIS EARLY, DIDN'T UPDATE IT AFTER I CHANGED OTHER PARTS.  JUST USE FIRST_FIT.
 meta *best_fit(size_t s) {
     meta *p = free_head;
     size_t best_dif = 2.5 * (size_t)G;
@@ -167,6 +168,7 @@ meta *best_fit(size_t s) {
     }
     return best;
 }
+*/
 
 
 // Determines how much memory to allocate based on the size requested
